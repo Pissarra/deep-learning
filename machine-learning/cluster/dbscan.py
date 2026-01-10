@@ -14,10 +14,10 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
 
 iris = load_iris(as_frame=True)
-irisDataType = iris['data']
-irisData = iris['data']
-irisTarget = iris['target']
-irisDataType['type'] = irisTarget
+irisDataType = iris['data'].copy()
+irisData = iris['data'].copy()
+irisTarget = iris['target'].copy()
+irisDataType['type'] = irisTarget.copy()
 
 irisDataType.describe()
 
