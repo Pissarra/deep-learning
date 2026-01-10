@@ -10,4 +10,6 @@ dependencies = [
     "pandas-stubs==2.3.0.250703",
     "plotly>=6.3.0",
     "scikit-learn>=1.7.1",
+    "SpeechRecognition>=3.10.0",
+    "pyaudio>=0.2.14",
 ]
